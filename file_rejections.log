@@ -1,0 +1,1832 @@
+2024-04-16 23:43:12,906 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:43:14,684 - INFO - Error BaseModelForm.__init__() got an unexpected keyword argument 'invoice'
+2024-04-16 23:44:08,428 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-16 23:45:16,935 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:45:21,833 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:45:23,069 - INFO - Error BaseModelForm.__init__() got an unexpected keyword argument 'invoice'
+2024-04-16 23:45:24,666 - INFO - Error BaseModelForm.__init__() got an unexpected keyword argument 'invoice'
+2024-04-16 23:47:48,080 - ERROR - Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 92, in dashboard
+    print(start_date, end_date)
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'start_date' where it is not associated with a value
+2024-04-16 23:48:46,140 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\forms.py changed, reloading.
+2024-04-16 23:48:58,996 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\forms.py changed, reloading.
+2024-04-16 23:49:44,733 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-16 23:50:28,799 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:50:34,107 - INFO - Error The Invoices could not be created because the data didn't validate.
+2024-04-16 23:51:23,148 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-16 23:52:28,359 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:52:33,215 - INFO - Error Cannot assign "<DirectDataExtractorForm bound=True, valid=False, fields=(invoice)>": "KS61.file" must be a "Invoices" instance.
+2024-04-16 23:53:50,997 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\forms.py changed, reloading.
+2024-04-16 23:55:10,848 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:55:14,179 - INFO - Error Cannot assign "<DirectDataExtractorForm bound=True, valid=False, fields=(invoice)>": "KS61.file" must be a "Invoices" instance.
+2024-04-16 23:55:53,430 - INFO - Starting data extraction for file: Raw content
+2024-04-16 23:55:59,259 - INFO - Created invoice_instance
+2024-04-16 23:55:59,281 - INFO - File Raw content added.
+2024-04-16 23:55:59,395 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-16 23:56:18,119 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-16 23:56:29,990 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-16 23:58:00,619 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-16 23:58:39,302 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-16 23:59:14,652 - ERROR - Internal Server Error: /admin/dg_app/invoices/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\storageclient.py", line 170, in _perform_request
+    resp = self._filter(request)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\storageclient.py", line 159, in _perform_request_worker
+    return self._httpclient.perform_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\_http\httpclient.py", line 247, in perform_request
+    raise HTTPError(status, message, respheaders, respbody)
+azure.storage._http.HTTPError: The requested URI does not represent any resource on the server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\options.py", line 1983, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\options.py", line 1593, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\actions.py", line 51, in delete_selected
+    modeladmin.delete_queryset(request, queryset)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\options.py", line 1237, in delete_queryset
+    queryset.delete()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1148, in delete
+    deleted, _rows_count = collector.delete()
+                           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\deletion.py", line 512, in delete
+    signals.post_delete.send(
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+           ^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\models.py", line 116, in delete_file_from_azure
+    storage.delete(file_name)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\storages\backends\azure_storage.py", line 74, in delete
+    self.connection.delete_blob(self.azure_container, name)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\blob\blobservice.py", line 2324, in delete_blob
+    self._perform_request(request)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\storageclient.py", line 177, in _perform_request
+    _storage_error_handler(ex)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\_serialization.py", line 25, in _storage_error_handler
+    return _general_error_handler(http_error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\storage\_common_error.py", line 82, in _general_error_handler
+    raise AzureHttpError(message, http_error.status)
+azure.common.AzureHttpError: The requested URI does not represent any resource on the server.
+<?xml version="1.0" encoding="utf-8"?><Error><Code>InvalidUri</Code><Message>The requested URI does not represent any resource on the server.
+RequestId:c1b1d317-001e-0084-792c-90b1ba000000
+Time:2024-04-16T18:29:55.5132221Z</Message><UriPath>https://bloblstoragelearning001.blob.core.windows.net/datagridztask/</UriPath></Error>
+2024-04-16 23:59:36,307 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-16 23:59:39,851 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:04:17,868 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:04:22,904 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:04:26,403 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:06:02,935 - ERROR - Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 92, in dashboard
+    print(start_date, end_date)
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'start_date' where it is not associated with a value
+2024-04-17 00:06:08,091 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 92, in dashboard
+    print(start_date, end_date)
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'start_date' where it is not associated with a value
+2024-04-17 00:06:30,580 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-17 00:06:39,857 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:06:42,266 - INFO - Created invoice_instance
+2024-04-17 00:06:42,278 - INFO - File Raw content added.
+2024-04-17 00:06:42,603 - ERROR - Internal Server Error: /rej_to_proc/1/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 308, in direct_data_extractor
+    return redirect(reverse('pdf_view', kwargs= {"status" : "Rejectedpyt"}))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pdf_view' with keyword arguments '{'status': 'Rejectedpyt'}' not found. 1 pattern(s) tried: ['pdf_view/\\Z']
+2024-04-17 00:06:55,589 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-17 00:06:57,702 - ERROR - Internal Server Error: /rej_to_proc/1/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 306, in direct_data_extractor
+    response = utils.direct_data_extractor(request, id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py", line 519, in direct_data_extractor
+    invoice = Invoices.objects.get(pk=id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+dg_app.models.Invoices.DoesNotExist: Invoices matching query does not exist.
+2024-04-17 00:07:06,358 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:08:24,572 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:09:29,445 - ERROR - Internal Server Error: /pdf_view/2/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:13:10,639 - ERROR - Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 92, in dashboard
+    print(start_date, end_date)
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'start_date' where it is not associated with a value
+2024-04-17 00:13:26,156 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-17 00:22:59,502 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:23:12,049 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:23:26,572 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:23:46,014 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:23:51,367 - INFO - Raw content
+2024-04-17 00:23:51,368 - INFO - Created invoice_instance
+2024-04-17 00:23:51,377 - INFO - 16082023BD474930
+2024-04-17 00:23:51,384 - INFO - 16082023BD474930
+2024-04-17 00:23:51,384 - INFO - Error __str__ returned non-string (type NoneType)
+2024-04-17 00:23:51,449 - ERROR - Internal Server Error: /rej_to_proc/1/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 308, in direct_data_extractor
+    return redirect(reverse('pdf_view', kwargs= {"status" : "Rejected"}))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pdf_view' with keyword arguments '{'status': 'Rejected'}' not found. 1 pattern(s) tried: ['pdf_view/\\Z']
+2024-04-17 00:24:00,667 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-17 00:24:46,752 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'invoice' attribute has no file associated with it.
+2024-04-17 00:29:22,894 - ERROR - Internal Server Error: /dashboard
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 92, in dashboard
+    print(start_date, end_date)
+          ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'start_date' where it is not associated with a value
+2024-04-17 00:29:37,282 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-17 00:29:54,868 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:29:57,085 - INFO - Raw content
+2024-04-17 00:29:57,085 - INFO - Created invoice_instance
+2024-04-17 00:29:57,093 - INFO - 16082023BD474930
+2024-04-17 00:29:57,099 - INFO - File Raw content added.
+2024-04-17 00:30:17,763 - INFO - File KS62.pdf rejected: Product: Valve not found
+2024-04-17 00:32:03,107 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:32:38,214 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:32:43,797 - INFO - Raw content
+2024-04-17 00:32:43,798 - INFO - Created invoice_instance
+2024-04-17 00:32:43,810 - INFO - 16082023BD474929
+2024-04-17 00:32:43,823 - INFO - File Raw content added.
+2024-04-17 00:33:21,860 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:33:54,751 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-17 00:34:04,788 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:34:06,784 - INFO - Raw content
+2024-04-17 00:34:06,792 - INFO - Error KS61() got unexpected keyword arguments: 'invoice'
+2024-04-17 00:35:04,275 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-17 00:35:11,454 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:35:13,588 - INFO - Raw content
+2024-04-17 00:35:13,597 - INFO - Error KS61() got unexpected keyword arguments: 'invoice'
+2024-04-17 00:36:08,015 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:36:30,563 - INFO - File KS62.pdf rejected: Product: Valve not found
+2024-04-17 00:36:39,166 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:36:41,980 - INFO - Raw content
+2024-04-17 00:36:41,988 - INFO - Error KS61() got unexpected keyword arguments: 'invoice'
+2024-04-17 00:37:14,980 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:37:32,161 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-17 00:37:53,058 - INFO - File KS61.pdf rejected: Product: Valve not found
+2024-04-17 00:37:58,483 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:38:01,036 - INFO - Raw content
+2024-04-17 00:38:01,044 - INFO - Created invoice_instance
+2024-04-17 00:38:01,050 - INFO - 16082023BD474928
+2024-04-17 00:38:01,050 - INFO - File Raw content added.
+2024-04-17 00:38:27,925 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 149, in pdf_view
+    invoices = invoices.filter(date__range=[start_date, end_date])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 1430, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“None” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2024-04-17 00:38:33,791 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 149, in pdf_view
+    invoices = invoices.filter(date__range=[start_date, end_date])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 1430, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“None” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2024-04-17 00:38:56,673 - ERROR - Internal Server Error: /invoice_data
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 209, in invoice_data
+    invoices = KS61.objects.filter(created_at__range=[start_date, end_date])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1318, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\lookups.py", line 276, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\__init__.py", line 1430, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“None” value has an invalid date format. It must be in YYYY-MM-DD format.']
+2024-04-17 00:39:13,618 - INFO - File KS62.pdf rejected: Product: Valve not found
+2024-04-17 00:39:20,849 - INFO - Starting data extraction for file: Raw content
+2024-04-17 00:39:22,870 - INFO - Raw content
+2024-04-17 00:39:22,878 - INFO - Created invoice_instance
+2024-04-17 00:39:22,885 - INFO - 16082023BD474929
+2024-04-17 00:39:22,885 - INFO - File Raw content added.
+2024-04-19 10:01:47,996 - WARNING - Not Found: /favicon.ico
+2024-04-19 10:03:57,515 - INFO - C:\Users\surya\Desktop\extra\dagz_project\env\Lib\site-packages\tabula\__init__.py changed, reloading.
+2024-04-19 10:04:16,469 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2024-04-19 10:04:16,469 - WARNING - No module named 'jpype'
+2024-04-19 10:04:28,642 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-19 10:04:28,737 - INFO - Request URL: 'https://bloblstoragelearning001.blob.core.windows.net/datagridztask/media/invoices/KS63.pdf'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.1 Python/3.11.0 (Windows-10-10.0.22631-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '1bf51242-fe06-11ee-9773-e02be95498d0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-04-19 10:04:28,997 - INFO - Response status: 404
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cdd79005-601e-0071-4f12-9295ab000000'
+    'x-ms-client-request-id': '1bf51242-fe06-11ee-9773-e02be95498d0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Fri, 19 Apr 2024 04:35:11 GMT'
+2024-04-19 10:04:29,092 - INFO - Request URL: 'https://bloblstoragelearning001.blob.core.windows.net/datagridztask/media/invoices/KS63.pdf?timeout=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '160177'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-blob-content-type': 'REDACTED'
+    'If-None-Match': '*'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.1 Python/3.11.0 (Windows-10-10.0.22631-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '1c2b36f9-fe06-11ee-824a-e02be95498d0'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2024-04-19 10:04:29,232 - INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 19 Apr 2024 04:35:12 GMT'
+    'ETag': '"0x8DC602A1A22B3EC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cdd79027-601e-0071-6c12-9295ab000000'
+    'x-ms-client-request-id': '1c2b36f9-fe06-11ee-824a-e02be95498d0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Fri, 19 Apr 2024 04:35:12 GMT'
+2024-04-19 10:05:01,564 - INFO - Starting data extraction for file: invoices/KS63.pdf
+2024-04-19 10:05:01,566 - INFO - Request URL: 'https://bloblstoragelearning001.blob.core.windows.net/datagridztask/media/invoices/KS63.pdf?timeout=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.1 Python/3.11.0 (Windows-10-10.0.22631-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2f8685e8-fe06-11ee-858f-e02be95498d0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-04-19 10:05:01,606 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '160177'
+    'Content-Type': 'application/pdf'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 19 Apr 2024 04:35:12 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DC602A1A22B3EC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cdd7bfa1-601e-0071-4913-9295ab000000'
+    'x-ms-client-request-id': '2f8685e8-fe06-11ee-858f-e02be95498d0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Fri, 19 Apr 2024 04:35:44 GMT'
+2024-04-19 10:05:14,572 - INFO - invoices/KS63.pdf
+2024-04-19 10:05:14,577 - INFO - Created invoice_instance
+2024-04-19 10:05:14,584 - INFO - 16082023BD474930
+2024-04-19 10:05:14,584 - INFO - File invoices/KS63.pdf added.
+2024-04-19 10:17:14,028 - WARNING - Not Found: /favicon.ico
+2024-04-20 12:03:23,848 - WARNING - Not Found: /favicon.ico
+2024-04-20 12:04:07,617 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2024-04-20 12:04:07,617 - WARNING - No module named 'jpype'
+2024-04-20 12:07:02,234 - INFO - File KS62.pdf rejected: Product: Valve not found
+2024-04-20 12:08:50,551 - INFO - Starting data extraction for file: Raw content
+2024-04-20 12:08:54,096 - INFO - Raw content
+2024-04-20 12:08:54,109 - INFO - Created invoice_instance
+2024-04-20 12:08:54,125 - INFO - 16082023BD474929
+2024-04-20 12:08:54,125 - INFO - File Raw content added.
+2024-04-20 12:10:06,040 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-21 00:28:02,795 - WARNING - Not Found: /favicon.ico
+2024-04-21 00:28:17,070 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: dg_app_invoices.message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 154, in pdf_view
+    selected_invoice = invoices.first()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1057, in first
+    for obj in queryset[:1]:
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: dg_app_invoices.message
+2024-04-21 00:35:27,184 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'discard_and_send_email' not found. 'discard_and_send_email' is not a valid view function or pattern name.
+2024-04-21 00:36:03,387 - ERROR - Internal Server Error: /pdf_view/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 183, in pdf_view
+    return render(request, 'pdfview.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'rej_to_disc' not found. 'rej_to_disc' is not a valid view function or pattern name.
+2024-04-21 01:16:00,918 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:17:33,007 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:17:45,924 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:18:28,390 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:20:04,136 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:20:17,311 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:20:35,157 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:20:57,087 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:22:02,642 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:22:24,694 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:22:38,179 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:22:58,774 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:23:15,116 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:24:01,850 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:24:17,520 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:25:01,073 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:25:20,218 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:30:27,000 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:30:46,656 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:30:56,544 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:33:09,882 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:33:33,229 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:33:45,487 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:34:36,668 - ERROR - Internal Server Error: /rej_to_disc/10/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 315, in discard_invoice
+    subject = f"Discarded Invoice - {invoice.invoice[8:]}"
+                                     ~~~~~~~~~~~~~~~^^^^
+TypeError: 'FieldFile' object is not subscriptable
+2024-04-21 01:34:49,678 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:35:00,295 - ERROR - Internal Server Error: /rej_to_disc/10/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 316, in discard_invoice
+    message = f"The invoice '{invoice.invoice}' has been discarded.\nComment: {comment}\nError message: {invoice.message}\n\nRegards,\nDataGridz Support Team."
+                              ^^^^^^^^^^^^^^^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+2024-04-21 01:35:25,817 - ERROR - Internal Server Error: /rej_to_disc/10/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 316, in discard_invoice
+    message = f"The invoice '{invoice.invoice}' has been discarded.\nComment: {comment}\nError message: {invoice.message}\n\nRegards,\nDataGridz Support Team."
+                              ^^^^^^^^^^^^^^^^^^^
+TypeError: 'FieldFile' object is not subscriptable
+2024-04-21 01:36:09,924 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:37:03,648 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:37:16,450 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:38:04,023 - INFO - File KS61.pdf rejected: Product: Valve not found
+2024-04-21 01:41:02,437 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 01:42:20,743 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dagz_project\settings.py changed, reloading.
+2024-04-21 01:45:17,654 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:45:39,831 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:45:50,437 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:46:00,961 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:46:34,736 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dagz_project\settings.py changed, reloading.
+2024-04-21 01:46:49,675 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:47:28,971 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:48:14,329 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dagz_project\settings.py changed, reloading.
+2024-04-21 01:49:41,213 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:50:27,751 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:50:37,958 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:51:37,389 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:51:51,368 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:52:03,500 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:52:18,614 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:52:28,492 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:52:47,630 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:53:00,073 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:53:17,399 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:53:28,003 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:54:45,484 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:55:35,992 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:55:57,580 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:57:27,322 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:58:07,681 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 01:58:48,870 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dagz_project\settings.py changed, reloading.
+2024-04-21 02:00:49,955 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:01:01,410 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:01:14,690 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:02:39,291 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-21 02:03:22,657 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:03:46,858 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:04:27,712 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:04:41,326 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 02:05:03,017 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-21 23:33:45,623 - WARNING - Not Found: /favicon.ico
+2024-04-21 23:34:14,655 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2024-04-21 23:34:14,655 - WARNING - No module named 'jpype'
+2024-04-21 23:37:38,600 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2024-04-21 23:37:38,611 - WARNING - No module named 'jpype'
+2024-04-21 23:46:24,022 - WARNING - Not Found: /favicon.ico
+2024-04-21 23:47:41,937 - WARNING - Error importing jpype dependencies. Fallback to subprocess.
+2024-04-21 23:47:41,964 - WARNING - No module named 'jpype'
+2024-04-22 11:43:39,354 - WARNING - Not Found: /favicon.ico
+2024-04-22 11:46:37,829 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-22 11:53:59,805 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:54:18,567 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:54:29,019 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:54:52,586 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:55:03,318 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:55:13,658 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:55:39,349 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:56:20,660 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:56:31,856 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:56:42,845 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:57:02,449 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:57:19,458 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 11:58:15,034 - INFO - File KS62.pdf rejected: Product: Valve not found
+2024-04-22 12:00:07,817 - ERROR - Internal Server Error: /rej_to_disc/13/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 331, in discard_invoice
+    server = smtplib.SMTP_SSL(request.user.host, 465)
+             ^^^^^^^
+NameError: name 'smtplib' is not defined
+2024-04-22 12:00:20,027 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 12:00:45,352 - ERROR - Internal Server Error: /rej_to_disc/13/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 332, in discard_invoice
+    server = smtplib.SMTP_SSL(request.user.host, 465)
+             ^^^^^^^
+NameError: name 'smtplib' is not defined
+2024-04-22 12:02:03,193 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 12:04:06,424 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-22 12:05:46,057 - INFO - Starting data extraction for file: Raw content
+2024-04-22 12:05:48,073 - INFO - Starting data extraction for file: Raw content
+2024-04-22 12:05:51,753 - INFO - Raw content
+2024-04-22 12:05:51,755 - INFO - Raw content
+2024-04-22 12:05:51,762 - INFO - Created invoice_instance
+2024-04-22 12:05:51,770 - INFO - 16082023BD474930
+2024-04-22 12:05:51,770 - INFO - File Raw content added.
+2024-04-22 12:05:51,775 - INFO - Created invoice_instance
+2024-04-22 12:05:51,779 - INFO - Error UNIQUE constraint failed: ks61.file_id
+2024-04-22 12:06:12,000 - INFO - File KS64.pdf rejected: Product: Valve not found
+2024-04-22 12:06:19,365 - INFO - Starting data extraction for file: Raw content
+2024-04-22 12:06:21,586 - INFO - Raw content
+2024-04-22 12:06:21,593 - INFO - Created invoice_instance
+2024-04-22 12:06:21,600 - INFO - 16082023BD474931
+2024-04-22 12:06:21,600 - INFO - File Raw content added.
+2024-04-22 13:00:57,658 - WARNING - Not Found: /favicon.ico
+2024-04-22 13:02:40,851 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-22 16:23:48,638 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:23:59,639 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:24:04,472 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:24:10,439 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:24:41,170 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:25:16,178 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:26:03,098 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:26:31,975 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:26:57,271 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:27:40,806 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:28:30,834 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:29:29,721 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:30:06,766 - WARNING - Not Found: /pdf_view/undefined
+2024-04-22 16:48:12,707 - WARNING - Not Found: /pdf_view/&query=s&query=su&query=sur&query=sury&query=surya&query=suryak&query=suryaki&query=suryakir&query=
+2024-04-22 16:48:52,183 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:49:06,191 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:49:18,845 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:49:34,805 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:50:04,878 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:51:00,427 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:52:01,834 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:53:41,916 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 16:59:59,029 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 17:05:07,523 - WARNING - Not Found: /csv_to_db
+2024-04-22 17:06:17,321 - WARNING - Not Found: /csv_to_db
+2024-04-22 17:12:45,683 - INFO - File KS63.pdf rejected: Product: Valve not found
+2024-04-22 17:13:12,930 - INFO - File KS63.pdf Accepted.
+2024-04-22 17:45:44,473 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 17:45:59,129 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 17:46:55,642 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py changed, reloading.
+2024-04-22 17:48:41,328 - INFO - C:\Users\surya\Desktop\extra\dagz_project\dg_app\utils.py changed, reloading.
+2024-04-22 17:49:01,894 - INFO - File KS62.pdf rejected: Product: Valve has incorrect price
+2024-04-22 17:51:30,826 - ERROR - Internal Server Error: /pdf_view/15/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\Desktop\extra\dagz_project\dg_app\views.py", line 165, in pdf_view
+    selected_invoice = invoices.get(id=invoice_id)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+dg_app.models.Invoices.DoesNotExist: Invoices matching query does not exist.
+2024-04-22 17:52:25,231 - INFO - Starting data extraction for file: Raw content
+2024-04-22 17:52:28,538 - INFO - Raw content
+2024-04-22 17:52:28,551 - INFO - Created invoice_instance
+2024-04-22 17:52:28,563 - INFO - 16082023BD474930
+2024-04-22 17:52:28,563 - INFO - File Raw content added.

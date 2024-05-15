@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="img">
+                <img src="{% static 'datagridz_logo.png' %}" alt="Datagridz logo">
+            </div>
+
+            <div class="menu">
+                <a href="{% url 'dashboard' %}" class="side-icons">
+                    <i class="fa-solid fa-boxes-stacked fa-xl" style="color: #020202;"></i><p>Dashboard</p>
+                </a>
+                <a href="{% url 'pdf_view' %}" class="side-icons">
+                    <i class="fa-solid fa-list fa-xl" style="color: #020202;"></i><p>File view</p>
+                </a>
+                <a href="{% url 'file_upload' %}" class="side-icons">
+                    <i class="fa-solid fa-upload fa-xl" style="color: #020202;"></i><p>Upload</p>
+                </a>
+                <a href="{% url 'invoice_data' %}" class="side-icons"><i class="fa-solid fa-chart-pie fa-xl" style="color: #020202;"></i><p>Reports</p></a>
+                <a href="{% url 'user_profile' %}" class="side-icons"><i class="fa-solid fa-sliders fa-xl" style="color: #020202;"></i><p>Settings</p></a>
+            </div>
+        </div>
+        <div class="content">
+            <nav>
+                <div class="left">
+                    <h1>User Profile</h1>
+                    {% comment %} <div class="search-box">
+                        <i class="fa-solid fa-search fa-sm" style="color: #020202;"></i>
+                        <input type="text" placeholder="Search transactions, customers, subscriptions">
+                    </div> {% endcomment %}
+                </div>
+                <div class="right">
+                    <div class="nav-links">
+                        <a href="#"><i class="fa-solid fa-question fa-xl" style="color: #020202;"></i></a>
+                        <a href="#"><i class="fa-solid fa-lightbulb fa-xl" style="color: #020202;"></i></a>
+                        <a href="{% url 'logout' %}"><i class="fa-solid fa-right-from-bracket fa-xl" style="color: #020202;"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-content">
+                <h2>Personal settings</h2>
+                <div class="account-box">
+                    <div class="headings">
+                        <h3 class="account">Account</h3>
+                        <h3 class="account email">Email</h3>
+                    </div>
+                    <hr>
+                    <div class="account-details">
+                        <form method="post" class="account-details-form">
+                            {% csrf_token %}
+                            <h3 style="margin: 30px 0px 50px 180px; font-size: 22px;">Account Details</h3>
+                            <div class="inputs">
+                                <p>Name</p>
+                                <input type="text" name="name" value="{{request.user.name}}"required>
+                            </div>
+                            <div class="inputs">
+                                <p>Email</p> 
+                                <input type="email" name="email" value="{{request.user.email}}" required></div>
+                            <div class="inputs">
+                                <p>Password</p> 
+                                <input type="password" name="password" required>
+                            </div>
+                            {% if status %}
+                                <div class="status" style="align-self: center; justify-self: center; border: 1px solid black; border-radius: 10px; padding: 10px; display:flex; align-items: center; justify-content: center;">
+                                    <h3>{{status}}</h3>
+                                </div>
+                            {% endif %}
+                            <button type="submit" class="profile_details_button">Save changes</button>
+                        </form>
+
+                        <form method="post" class="email-details hide">
+                            {% csrf_token %}
+                            <h3 style="margin: 30px 0px 50px 180px; font-size: 22px;">Email Details</h3>
+                            <div class="inputs">
+                                <p>Host</p>
+                                <input type="text" name="host" value="{{request.user.host}}"required>
+                            </div>
+                            <div class="inputs">
+                                <p>Email</p> 
+                                <input type="email" name="email" value="{{request.user.eemail}}" required></div>
+                            <div class="inputs">
+                                <p>Password</p> 
+                                <input type="password" name="password" value="{{request.user.epassword}}"required>
+                            </div>
+                            {% if status %}
+                                <div class="status" style="align-self: center; justify-self: center; border: 1px solid black; border-radius: 10px; padding: 10px; display:flex; align-items: center; justify-content: center;">
+                                    <h3>{{status}}</h3>
+                                </div>
+                            {% endif %}
+                            <button type="submit" class="profile_details_button">Save changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let status = document.querySelectorAll(".status");
+
+    setTimeout(() => {
+    for(let i = 0; i < status.length; i++){
+        status[i].style.display = "none";  
+    }}, 5000);
+
+    let account = document.querySelector(".account");
+    let account_email = document.querySelector(".account.email");
+    console.log(account);
+    console.log(account_email);
+
+    let account_form = document.querySelector(".account-details-form");
+    let email_form = document.querySelector(".email-details");
+
+    console.log(account_form);
+    console.log(email_form);
+
+    account.addEventListener("click", () => {
+        account_form.classList.remove("hide");
+        email_form.classList.add("hide");
+        account.style.border_bottom = "border-bottom: 3px solid rgba(0, 0, 255, 0.403);";
+    })
+
+    account_email.addEventListener("click", () => {
+        account_form.classList.add("hide");
+        email_form.classList.remove("hide");
+    })
+</script>
+</html>

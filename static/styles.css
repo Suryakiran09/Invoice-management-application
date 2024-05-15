@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.main{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(128, 128, 128, 0.196);
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar{
+    position: relative;
+    background-color: #f6f7eb;
+    max-height: 100;
+    width: 15%;
+    
+}
+
+.sidebar .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    padding-left: 40px;
+    scale: 2.5;
+}
+
+.sidebar .img img{
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16/9;
+    mix-blend-mode:multiply;
+}
+
+.sidebar .menu{
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.sidebar .menu a{
+    text-decoration: none;
+    color: #010101;
+}
+
+.sidebar .menu a p{
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu .side-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+.content{
+    position: relative;
+    width: 100%;
+}
+
+nav{
+    position: relative;
+    background-color: #ffffff;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.339);
+}
+
+nav .left{
+    display: flex;
+    margin-left: 50px;
+    position: relative;
+}
+
+nav .left h1{
+    font-size: 30px;
+}
+
+nav .left .search-box{
+    background-color: #eeeef0;
+    margin-left: 30px;
+    position: relative;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .left .search-box i{
+    padding: 0px 10px 0px 10px;
+}
+
+nav .left .search-box input{
+    position: relative;
+    outline: none;
+    appearance: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+input::placeholder{
+    position: relative;
+    font-size:11px;
+    transform: translateY(-2px);
+}
+
+nav .right .nav-links{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+
+#user-name{
+    align-self: center;
+    justify-self: center;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+nav .right .nav-links a{
+    margin: 10px;
+}
+
+body .main .main-content{
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body .main .main-content .box-1 .sharing-links{
+    float: right;
+}
+
+.sharing-links a{
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #e94f37;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.sharing-links a:nth-child(2){
+    background-color: #393e41;
+}
+
+body .main .main-content .box-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.box-2 .boxes{
+    background-color: #e94f37;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 120px 30px 25px;
+    display: flex;
+    flex-direction: Column;
+    row-gap: 20px;
+    justify-content: space-around;
+}
+
+.box-2 .boxes:nth-child(even){
+    background-color: #393e41;
+    color: #ffffff;
+}
+
+.box-2 .boxes p{
+    font-size: 13px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#box-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form .file{
+    position: relative;
+    width: 800px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 1px dashed black;
+    border-radius: 30px;
+}
+
+form .file:hover{
+    cursor:grab;
+    background-color: rgba(255, 255, 255, 0.595);
+    border: 1px dashed rgba(0, 0, 0, 0.641);
+    border-radius: 20px;
+}
+
+form .file p{
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+form #status p{
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+form .file input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+    opacity: 0;
+}
+
+form button{
+    position: relative;
+    height: 10%;
+    width: 10%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.485);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    margin-top: 80px;
+}
+
+
+
+.content .main-content .account-box{
+    margin-top: 30px; 
+    box-shadow: -1px 1px 3px black;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.content .main-content .account-box .headings{
+    display: flex;
+    flex-direction: row;
+}
+
+.content .main-content .account-box .headings .account{
+    color: blue;
+    margin: 10px 0px 0px 30px;
+    padding: 5px;
+    width: 85px;
+    text-align: center;
+    border-bottom: 3px solid blue;
+}
+
+.content .main-content .account-box .headings .account:hover{
+    cursor: pointer;
+    border-bottom: 3px solid rgba(0, 0, 255, 0.403);
+}
+
+.content .main-content .account-box .account-details{
+    padding: 30px 100px 100px 100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.main-content .account-box .account-details form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    width: 35%;
+    height: 90%;
+    box-shadow: -1px 1px 3px black;
+    border-radius: 10px;
+}
+
+.main-content .account-box .account-details form .inputs{
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content .account-box .account-details form .inputs input{
+    outline: none;
+    border: none;
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.main-content .account-box .account-details-form.hide{
+    display: none;
+}
+
+.main-content .account-box .email-details.hide{
+    display: none;
+}
+
+.main-content .account-box .account-details form button{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgba(0, 0, 255, 0.762);
+    color: white;
+}
+
+.main-content .account-box .account-details form .inputs input:focus{
+    border: 2px solid blue;
+}
+
+.main-content form .status{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid black;
+}
+

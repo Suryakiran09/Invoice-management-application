@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>File Upload</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="img">
+            <img src="{% static 'datagridz_logo.png' %}" alt="Datagridz logo">
+        </div>
+
+        <div class="menu">
+            <a href="{% url 'dashboard' %}" class="side-icons">
+                <i class="fa-solid fa-boxes-stacked fa-xl" style="color: #020202;"></i><p>Dashboard</p>
+            </a>
+            <a href="{% url 'pdf_view' %}" class="side-icons">
+                <i class="fa-solid fa-list fa-xl" style="color: #020202;"></i><p>File view</p>
+            </a>
+            <a href="{% url 'file_upload' %}" class="side-icons">
+                <i class="fa-solid fa-upload fa-xl" style="color: #020202;"></i><p>Upload</p>
+            </a>
+            <a href="{% url 'invoice_data' %}" class="side-icons"><i class="fa-solid fa-chart-pie fa-xl" style="color: #020202;"></i><p>Reports</p></a>
+            <a href="{% url 'user_profile' %}" class="side-icons"><i class="fa-solid fa-sliders fa-xl" style="color: #020202;"></i><p>Settings</p></a>
+        </div>
+    </div>
+    <div class="content">
+        <nav>
+            <div class="left">
+                <h1>CSV Upload</h1>
+                {% comment %} <div class="search-box">
+                    <i class="fa-solid fa-search fa-sm" style="color: #020202;"></i>
+                    <input type="text" placeholder="Search transactions, customers, subscriptions">
+                </div> {% endcomment %}
+            </div>
+            <div class="right">
+                <div class="nav-links">
+                    <h3 id="user-name">Hello {{request.user.name}}</h3>
+                    <a href="#"><i class="fa-solid fa-question fa-xl" style="color: #020202;"></i></a>
+                    <a href="#"><i class="fa-solid fa-lightbulb fa-xl" style="color: #020202;"></i></a>
+                    <a href="{% url 'logout' %}"><i class="fa-solid fa-right-from-bracket fa-xl" style="color: #020202;"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content">
+            <h1>CSV Upload</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="csv_file">Select CSV File:</label>
+        <input type="file" id="csv_file" name="csv_file" accept=".csv" required onchange="showHeaders(this)">
+        <br><br>
+
+        <label for="map_headers">Map CSV Headers to Database Fields:</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>CSV Header</th>
+                    <th>Database Field</th>
+                </tr>
+            </thead>
+            <tbody id="mapping-table">
+                <!-- Mapping rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+        </div>
+    </div>
+</body>
+<script>
+    const modelFields = JSON.parse('{{ model_fields_json|escapejs }}');
+    let mapping = {};
+
+    function showHeaders(fileInput) {
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const contents = e.target.result;
+                const lines = contents.split('\n');
+                const headers = lines[0].split(',');
+
+                // Initialize mapping with null values
+                mapping = Object.fromEntries(headers.map(header => [header, null]));
+
+                const mappingTable = document.getElementById('mapping-table');
+                mappingTable.innerHTML = '';
+
+                headers.forEach(header => {
+                    const row = document.createElement('tr');
+                    const headerCell = document.createElement('td');
+                    headerCell.textContent = header;
+                    row.appendChild(headerCell);
+
+                    const fieldCell = document.createElement('td');
+                    const fieldSelect = document.createElement('select');
+                    fieldSelect.name = `map_${header}`;
+                    fieldSelect.addEventListener('change', function() {
+                        mapping[header] = this.value;
+                    });
+                    const option = document.createElement('option');
+                    option.value = '';
+                    option.textContent = '-- Select Field --';
+                    fieldSelect.appendChild(option);
+                    modelFields.forEach(field => {
+                        const option = document.createElement('option');
+                        option.value = field;
+                        option.textContent = field;
+                        fieldSelect.appendChild(option);
+                    });
+                    fieldCell.appendChild(fieldSelect);
+                    row.appendChild(fieldCell);
+
+                    mappingTable.appendChild(row);
+                });
+            }
+            reader.readAsText(file);
+        }
+    }
+</script>
+</html>

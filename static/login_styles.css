@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100px;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.226);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    border-top: 1px solid rgba(255, 255, 255, 0.226);
+    border-right: 1px solid rgba(240, 237, 237, 0.226);
+    box-shadow: -0.5px 1px 3px ;
+    margin-top: 30px;
+    margin: 0px 615px;
+    border-radius: 10px;;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+h6{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: blue;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.log-reg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    margin-top: 30px;;
+    margin-bottom: 50px;
+}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.758);
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}

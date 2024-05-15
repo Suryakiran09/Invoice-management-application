@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Invoice File</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+
+
+
+<div class="button-container">
+  <!-- <img src="NFS.JPEG" alt="Image" class="image-above-button"></img> -->
+	
+  <img src="{% static 'NFS.jpeg' %}" class="image-above-button" width="175" height="65">
+	
+
+    <button id="runButton" class="business-button blue-button">Run NFS Invoice File</button>
+    <div id="output"></div>
+	
+	
+	
+	
+	<table id="table-structure" border="1" style="border-collapse: collapse; width: 100%;class=business-table">
+        <thead>
+            <tr>
+                {% for column in col_names %}
+                    <th style="border: 1px solid #000; padding: 8px; background-color: #4CAF50;color: white;font-family: Arial, sans-serif">{{column}}</th>
+                {% endfor%}
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for dat in data %}
+            <tr>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.id }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Registered_Business_Address }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Telephone }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Email }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Company_Number }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Vat_Number }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Trading_Address }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Business_Name }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Account_Terms }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Invoice_Date }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Invoice_Number }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Date }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Authorisation_Number }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Make }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Model }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Registration }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Description_of_Work }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{dat.Price}}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Net_Total }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Vat_at_20_Percent }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Invoice_Total }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Total_Payable }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Payment_Due }}</td>
+                <td style="border: 1px solid #000; padding: 8px;">{{ dat.Customer_Name }}</td>
+            </tr>
+            {% endfor %}
+            <!-- Add more empty rows if needed -->
+        </tbody>
+    </table>
+    
+
+	
+	
+	
+	
+	
+
+
+
+
+    
+	<!--<p>Status: <span id="status">NOT RUNNING</span></p>-->
+	<p><b>Status:</b> <span id="status" class="bold status-not-running">Not Running</span></p>
+	
+	
+
+</div>
+
+
+
+
+</body>
+<script>
+    document.getElementById('runButton').addEventListener('click', function () {
+        // Get the status element
+        const statusElement = document.getElementById('status');
+        
+        
+     
+        // Set the status to "Running..." when the button is clicked
+        statusElement.textContent = 'Running.........';
+        statusElement.className = 'bold status-running'; // Change the class for bold and orange text
+
+        function reloadPage() {
+            location.reload();
+        }
+
+        if (statusElement.textContent === 'Not Running'){
+            setInterval(reloadPage, 1000);
+        }
+     
+        fetch('/run_code', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                // Display the data in the 'output' element
+                const outputElement = document.getElementById('output');
+                outputElement.innerHTML = data.data;
+     
+                // Update the status to "Completed" after displaying data
+                statusElement.textContent = 'Completed';
+                statusElement.className = 'bold status-completed'; // Change the class for bold and green text
+                window.location.href = 'http://127.0.0.1:8000/';
+            } else {
+                // Display the error message in case of an error
+                alert('Error: ' + data.message);
+                statusElement.textContent = 'Error';
+                statusElement.className = 'bold status-error'; // Change the class for bold and red text
+                window.location.href = 'http://127.0.0.1:8000/';
+            }
+            
+              
+     var tableStructure = document.getElementById("table-structure");
+     tableStructure.style.display = 'none';
+        
+       
+            
+            
+            
+            
+            
+            
+            
+        });
+     });
+     
+     
+</script>
+</html>
